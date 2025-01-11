@@ -25,8 +25,12 @@ const MessageSchema = new Schema(
       type: String,
       required: [true, "Email is required"],
     },
-    phone: String,
-    body: String,
+    phone: {
+      type: String,
+    },
+    body: {
+      type: String,
+    },
     read: {
       type: Boolean,
       default: false,
